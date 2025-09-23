@@ -64,11 +64,12 @@ jobs:
         
     - name: Upload artifacts on failure
       if: failure()
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: error-logs
         path: |
           *.log
           .linkedin_tokens.json
         retention-days: 7
+
 
