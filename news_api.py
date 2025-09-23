@@ -418,8 +418,9 @@ def automated_linkedin_post(draft_linkedin_post=None):
     day_headline = day_headlines.get(current_day)
     
     # Create the final message structure
-    timestamp_header = f"🤖 Automated LinkedIn post - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
-    final_message = f"{timestamp_header}\n\n{day_headline}\n\n{draft_linkedin_post}"
+    # timestamp_header = f"🤖 Automated LinkedIn post - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
+    # final_message = f"{timestamp_header}\n\n{day_headline}\n\n{draft_linkedin_post}"
+    final_message = f"{day_headline}\n\n{draft_linkedin_post}"
     
     print(f"📄 Final post content:\n{final_message}\n")
     
